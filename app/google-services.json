@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "493863392166",
+    "firebase_url": "https://healthtracker-da73f.firebaseio.com",
+    "project_id": "healthtracker-da73f",
+    "storage_bucket": "healthtracker-da73f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493863392166:android:b0edfcb7d7d0b073",
+        "android_client_info": {
+          "package_name": "com.artemshvadskiy.healthtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493863392166-9k1p9mklhc9r98uu2pn07r0k7jhnlht4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQFEUdz_3UmsI-ZjByCALAjtklCzyoqzY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
