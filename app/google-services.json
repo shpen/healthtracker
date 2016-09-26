@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "493863392166-epbk6a114k6i11vfi2jbhcvgk4cpdrud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.artemshvadskiy.healthtracker",
+            "certificate_hash": "59D77A7F0C60E735FF81F7395CA5C2D332BDA4A5"
+          }
+        },
+        {
           "client_id": "493863392166-9k1p9mklhc9r98uu2pn07r0k7jhnlht4.apps.googleusercontent.com",
           "client_type": 3
         }
