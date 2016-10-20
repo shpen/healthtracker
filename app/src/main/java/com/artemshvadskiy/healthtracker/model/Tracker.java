@@ -1,15 +1,13 @@
 package com.artemshvadskiy.healthtracker.model;
 
-import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tracker extends BaseModel<Tracker> {
+public class Tracker extends BaseModel {
     private String mName;
-    private ArrayList<Alarm> mAlarms;
-    private ArrayList<Event> mEvents;
+    private List<Alarm> mAlarms;
+    private List<Event> mEvents;
 
-    @Inject
     public Tracker() {
         mAlarms = new ArrayList<>();
         mEvents = new ArrayList<>();
@@ -23,11 +21,23 @@ public class Tracker extends BaseModel<Tracker> {
         return mName;
     }
 
+    public void setAlarms(List<Alarm> alarms) {
+        mAlarms = alarms;
+    }
+
     public List<Alarm> getAlarms() {
         return mAlarms;
     }
 
+    public void setEvents(List<Event> events) {
+        mEvents = events;
+    }
+
+    public List<Event> getEvents() {
+        return mEvents;
+    }
+
     public void logEvent() {
-        new Event(this).save();
+        mEvents.add(new Event(this));
     }
 }

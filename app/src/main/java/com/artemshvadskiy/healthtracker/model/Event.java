@@ -2,7 +2,7 @@ package com.artemshvadskiy.healthtracker.model;
 
 import java.util.Date;
 
-public class Event extends BaseModel<Event> {
+public class Event extends BaseModel {
     private final Tracker mTracker;
     private final Date mDate;
 

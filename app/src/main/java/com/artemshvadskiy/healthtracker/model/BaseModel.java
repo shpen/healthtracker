@@ -1,10 +1,6 @@
 package com.artemshvadskiy.healthtracker.model;
 
-import javax.inject.Inject;
-
-public abstract class BaseModel<T extends BaseModel> {
-    @Inject Repository<T> mRepository;
-
+public abstract class BaseModel {
     private long mId;
 
     void setId(long id) {
@@ -13,13 +9,5 @@ public abstract class BaseModel<T extends BaseModel> {
 
     public long getId() {
         return mId;
-    }
-
-    protected void save() {
-        mRepository.save((T) this);
-    }
-
-    protected void delete() {
-        mRepository.delete((T) this);
     }
 }

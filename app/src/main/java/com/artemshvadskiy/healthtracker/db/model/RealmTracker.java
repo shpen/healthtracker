@@ -12,4 +12,5 @@ public class RealmTracker extends RealmObject {
 
     public boolean mManuallyLoggable;
     public RealmList<RealmAlarm> mAlarms;
+    public RealmList<RealmEvent> mEvents;
 }

@@ -1,6 +1,6 @@
 package com.artemshvadskiy.healthtracker.model;
 
-public class Alarm extends BaseModel<Alarm> {
+public class Alarm extends BaseModel {
     private Tracker mTracker;
     private int mHour;
     private int mMinute;

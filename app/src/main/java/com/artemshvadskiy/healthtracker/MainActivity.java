@@ -70,11 +70,11 @@ public class MainActivity extends AppCompatActivity
     private void setupLists() {
         mTrackerList = (RecyclerView) findViewById(R.id.tracker_list);
         mTrackerList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        mTrackerList.setAdapter(new TrackerRecyclerAdapter(mTrackerRepository.getAll(Tracker.class)));
+        mTrackerList.setAdapter(new TrackerRecyclerAdapter(mTrackerRepository.getAll()));
 
         mEventList = (RecyclerView) findViewById(R.id.event_list);
         mEventList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        mEventList.setAdapter(new EventRecyclerAdapter(mEventRepository.getAll(Event.class)));
+        mEventList.setAdapter(new EventRecyclerAdapter(mEventRepository.getAll()));
     }
 
     @Override
